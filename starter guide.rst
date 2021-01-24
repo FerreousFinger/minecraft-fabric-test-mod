@@ -84,6 +84,7 @@ for your main class, e.g.: :code:`ProjectName.java`.
 Add the following lines to your main class:
 
 .. code-block:: java
+    :number-lines:
 
     package mcmods.myname.projectname;
 
@@ -99,11 +100,8 @@ Add the following lines to your main class:
 Step 6: Update fabric.mod.json
 ==============================
 
-Mod ID
-______
-
 .. code-block:: java
-    :emphasize-lines: 4,6,7,9,12,13,16,17,22,26
+    :number-lines:
 
     {
       "schemaVersion": 1,
@@ -142,3 +140,5 @@ ______
         "another-mod": "*"
       }
     }
+
+- Change the modid in :code:`"id": "modid",` to ...
