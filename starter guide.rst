@@ -68,5 +68,12 @@ First, open IntelliJ IDEA and click on the *Get from VCS* button. Next, copy the
 repository and past it into the *URL* field. When your done click *Clone* to donwload a copy
 of your project to your computer.
 
-Step 4:
-=======
+Step 4: Delete Example Packages
+===============================
+
+Delete all content in the java directory.
+
+Step 5: Add New Packages
+========================
+
+When adding the new packages make sure you stick to the structure of your maven group, e.g.: :code:`mcmods.myname.projectname`.
