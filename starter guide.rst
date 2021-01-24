@@ -25,10 +25,6 @@ Step 2: Update Files
 
 Next, you need to update some files:
 
-- gradle.properties
-- README.md (optional but recommended)
-- LICENSE (optional but recommended)
-
 gradle.properties
 -----------------
 
@@ -49,6 +45,21 @@ have to. It is commonly written in lowercase using dashes instead of whitespaces
 
 .. _Fabric Latest Versions: https://modmuss50.me/fabric.html?&version=1.16.4
 .. _Java's package name rules: https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7
+
+README.md
+---------
+
+Replace the description of the Fabric Example Mod with a description of the mod you're going to create.
+Besides introducing your mod to other people, this can serve as a guideline to keep track of the goals
+for your mod.
+
+LICENSE
+-------
+
+Replace the license of the Fabric Example Mod with a license of your choice. If you're not sure which
+license to use for your project, take a look at `choosealicense.com`_.
+
+.. _choosealicense.com: https://choosealicense.com/
 
 Step 3: Download Repository
 ===========================
