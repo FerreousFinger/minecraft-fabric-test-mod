@@ -2,12 +2,12 @@
 Fabric Starter Guide
 ====================
 
-- Create repository using the Fabric Example Mod as a template.
-- Update files:
+#. Create repository using the Fabric Example Mod as a template
+#. Update files
     - gradle.properties
     - README.md
     - LICENSE
-- Download repository
+#. Download repository
 
 Step 1: Create Repository
 =========================
@@ -57,5 +57,5 @@ First, open IntelliJ IDEA and click on the *Get from VCS* button. Next, copy the
 repository and past it into the *URL* field. When your done click *Clone* to donwload a copy
 of your project to your computer.
 
-Step 4: Run build.gradle 
-========================
+Step 4:
+=======
