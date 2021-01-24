@@ -76,4 +76,69 @@ Delete all content in the java directory.
 Step 5: Add New Packages
 ========================
 
-When adding the new packages make sure you stick to the structure of your maven group, e.g.: :code:`mcmods.myname.projectname`.
+When adding the new packages make sure you stick to the structure of your maven group,
+e.g.: :code:`mcmods.myname.projectname`.
+Create a new class inside your package that serves as your main class. It's common to use the name of
+your mod (beginning every word with an uppercase while omitting any whitespaces, dashes or underlines)
+for your main class, e.g.: :code:`ProjectName.java`.
+Add the following lines to your main class:
+
+.. code-block:: java
+
+    package mcmods.myname.projectname;
+
+    import net.fabricmc.api.ModInitializer;
+
+    public class ProjectName implements ModInitializer {
+        @Override
+        public void onInitialize() {
+
+        }
+    }
+
+Step 6: Update fabric.mod.json
+==============================
+
+Mod ID
+______
+
+.. code-block:: java
+    :emphasize-lines: 4,6,7,9,12,13,16,17,22,26
+
+    {
+      "schemaVersion": 1,
+      "id": "modid",
+      "version": "${version}",
+
+      "name": "Example Mod",
+      "description": "This is an example description! Tell everyone what your mod is about!",
+      "authors": [
+        "Me!"
+      ],
+      "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+      },
+
+      "license": "CC0-1.0",
+      "icon": "assets/modid/icon.png",
+
+      "environment": "*",
+      "entrypoints": {
+        "main": [
+          "net.fabricmc.example.ExampleMod"
+        ]
+      },
+      "mixins": [
+        "modid.mixins.json"
+      ],
+
+      "depends": {
+        "fabricloader": ">=0.7.4",
+        "fabric": "*",
+        "minecraft": "1.16.x"
+      },
+      "suggests": {
+        "another-mod": "*"
+      }
+    }

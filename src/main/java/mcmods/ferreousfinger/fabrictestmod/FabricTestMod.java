@@ -1,4 +1,10 @@
 package mcmods.ferreousfinger.fabrictestmod;
 
-public class FabricTestMod {
+import net.fabricmc.api.ModInitializer;
+
+public class FabricTestMod implements ModInitializer {
+    @Override
+    public void onInitialize() {
+
+    }
 }
