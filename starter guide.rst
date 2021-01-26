@@ -97,8 +97,11 @@ Add the following lines to your main class:
         }
     }
 
-Step 6: Update fabric.mod.json
-==============================
+Step 6: Update assets
+=====================
+
+fabric.mod.json
+---------------
 
 .. code-block:: java
     :number-lines:
@@ -141,4 +144,11 @@ Step 6: Update fabric.mod.json
       }
     }
 
+#TODO: Add description of the changes made to the fabric.mod.json and modid.mixins.json file.
 - Change the modid in :code:`"id": "modid",` to ...
+
+/modid
+------
+
+Update the name of the modid directory located at :code:`src/main/resources/assets` to match the id of your mod.
+
